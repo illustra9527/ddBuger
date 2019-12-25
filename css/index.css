@@ -125,7 +125,7 @@ body {
   min-height: calc(100vh - 56px);
   /*     background-color: $section_2_bg_color; */
   position: relative;
-  background-image: url("/img/buger pattern.jpg");
+  background-image: url("../img/buger-pattern.jpg");
   background-position: center;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.404);
@@ -227,7 +227,7 @@ body {
   width: 100%;
   height: 50%;
   background-color: #eeeeee;
-  background-image: url("./img/丹丹漢堡-橋頭店.jpg");
+  background-image: url("");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -238,7 +238,7 @@ body {
 #section_4 .section_4_locations {
   /*         max-height: 80%; */
   /*         padding-top: 50px; */
-  background-image: url("./img/locations/taiwan map-3.jpg");
+  background-image: url("../img/locations/taiwan-map-3.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -330,7 +330,7 @@ body {
 }
 
 #section_5 .section_5_content_top .section_5_features:nth-child(1) {
-  background-image: url("./img/cards/中西合併.jpg");
+  background-image: url("../img/cards/中西合併.jpg");
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -362,7 +362,7 @@ body {
 }
 
 #section_5 .section_5_content_top .section_5_features:nth-child(2) {
-  background-image: url("./img/cards/Food-Safety-Blog.jpg");
+  background-image: url("../img/cards/Food-Safety-Blog.jpg");
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -425,7 +425,7 @@ body {
 }
 
 #section_5 .section_5_content_bot .section_5_features:nth-child(1) {
-  background-image: url("./img/cards/check.jpg");
+  background-image: url("../img/cards/check.jpg");
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -457,7 +457,7 @@ body {
 }
 
 #section_5 .section_5_content_bot .section_5_features:nth-child(2) {
-  background-image: url("./img/cards/Food-Safety-Blog.jpg");
+  background-image: url("../img/cards/Food-Safety-Blog.jpg");
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -510,7 +510,7 @@ body {
   width: 100%;
   padding-top: 46px;
   padding-bottom: 46px;
-  background-image: url("./img/yellow bgi_.png");
+  background-image: url("../img/yellow-bgi.png");
   background-size: cover;
   background-position: center;
   background-color: rgba(255, 255, 255, 0.35);
