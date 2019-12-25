@@ -269,7 +269,7 @@ body {
         width: 100%;
         height: 50%;
         background-color: #eeeeee;
-        background-image: url('/img/丹丹漢堡-橋頭店.jpg'); //要補圖
+        background-image: url('./img/丹丹漢堡-橋頭店.jpg'); //要補圖
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
@@ -280,7 +280,7 @@ body {
     .section_4_locations {
         /*         max-height: 80%; */
         /*         padding-top: 50px; */
-        background-image: url('/img/locations/taiwan\ map-3.jpg');
+        background-image: url('./img/locations/taiwan\ map-3.jpg');
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -405,7 +405,7 @@ body {
             height: 200px;
 
             &:nth-child(1) {
-                background-image: url('/img/cards/中西合併.jpg');
+                background-image: url('./img/cards/中西合併.jpg');
                 background-position: center;
                 background-size: cover;
                 display: flex;
@@ -432,7 +432,7 @@ body {
             }
 
             &:nth-child(2) {
-                background-image: url('/img/cards/Food-Safety-Blog.jpg');
+                background-image: url('./img/cards/Food-Safety-Blog.jpg');
                 background-position: center;
                 background-size: cover;
                 display: flex;
@@ -481,7 +481,7 @@ body {
             height: 200px;
 
             &:nth-child(1) {
-                background-image: url('/img/cards/check.jpg');
+                background-image: url('./img/cards/check.jpg');
                 background-position: center;
                 background-size: cover;
                 display: flex;
@@ -509,7 +509,7 @@ body {
             }
 
             &:nth-child(2) {
-                background-image: url('/img/cards/Food-Safety-Blog.jpg');
+                background-image: url('./img/cards/Food-Safety-Blog.jpg');
                 background-position: center;
                 background-size: cover;
                 display: flex;
@@ -566,7 +566,7 @@ body {
     width: 100%;
     padding-top: 46px;
     padding-bottom: 46px;
-    background-image: url('/img/yellow\ bgi_.png');
+    background-image: url('./img/yellow\ bgi_.png');
     background-size: cover;
     background-position: center;
     background-color: hsla(0, 0%, 100%, 0.35);
