@@ -1,7 +1,7 @@
 @import 'variable';
 
 body {
-    overflow-x: hidden;
+    
 }
 
 /* NAV */
@@ -367,6 +367,7 @@ body {
     // height: $view-heigh-100-nav;
     padding-bottom: 46px;
     background-color: rgb(247, 247, 232);
+    overflow: hidden;
 
     .container_cus {
 

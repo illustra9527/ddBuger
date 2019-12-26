@@ -2,10 +2,6 @@
 /* 通用 */
 /* pantone color list */
 /* 漸層函式 */
-body {
-  overflow-x: hidden;
-}
-
 /* NAV */
 .bg-nav {
   background-color: #F87148;
@@ -284,6 +280,7 @@ body {
   max-width: 100%;
   padding-bottom: 46px;
   background-color: #f7f7e8;
+  overflow: hidden;
 }
 
 @media (max-width: 576px) {
