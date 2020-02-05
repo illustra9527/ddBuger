@@ -1,0 +1,964 @@
+@charset "UTF-8";
+/* 通用 */
+/* pantone color list */
+/* 漸層函式 */
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 440px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+
+/* NAV */
+.bg-nav {
+  background-color: #F87148;
+}
+
+.bg-nav .navbar-brand {
+  position: relative;
+  margin-right: 150px;
+}
+
+@media (max-width: 1200px) {
+  .bg-nav .navbar-brand {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 960px) {
+  .bg-nav .navbar-brand {
+    margin-right: 0;
+  }
+}
+
+.bg-nav .navbar-brand .nav_logo {
+  position: absolute;
+  top: -20px;
+}
+
+.bg-nav .navbar-brand .nav_logo img {
+  width: 80px;
+}
+
+@media (max-width: 989px) {
+  .bg-nav .navbar-brand .nav_logo img {
+    width: 55px;
+  }
+}
+
+.bg-nav .navbar-collapse .navbar-nav .nav-item .nav_font_style {
+  color: white;
+  font-weight: 600;
+  text-shadow: #7a7a7a 1px 1px 0px;
+  font-size: 18px;
+}
+
+.bg-nav .navbar-collapse .navbar-nav .nav-item .nav_font_style:hover {
+  color: #52ff5b;
+}
+
+@media (max-width: 1200px) {
+  .bg-nav .navbar-collapse .navbar-nav .nav-item .nav_font_style {
+    font-size: 13px;
+  }
+}
+
+.bg-nav .nav_right .nav_logout {
+  margin-right: 20px;
+  color: white;
+  font-weight: 600;
+  text-shadow: #7a7a7a 1px 1px 0px;
+}
+
+.bg-nav .nav_right .nav_logout:hover {
+  color: #52ff5b;
+}
+
+@media (max-width: 1200px) {
+  .bg-nav .nav_right .nav_logout {
+    font-size: 13px;
+  }
+}
+
+.bg-nav .nav_right .nav_right_lang {
+  padding-right: 40px;
+}
+
+.bg-nav .nav_right .nav_right_lang .nav_font_style {
+  color: white;
+  font-weight: 600;
+  text-shadow: #7a7a7a 1px 1px 0px;
+}
+
+.bg-nav .nav_right .nav_right_lang .nav_font_style:hover {
+  color: #056C9B;
+}
+
+.bg-nav .nav_right .nav_right_lang .nav_toggle_font_style {
+  color: #33558b;
+  font-weight: 600;
+}
+
+.bg-nav .nav_right .nav_right_lang .nav_toggle_font_style:hover {
+  color: #d13b3f;
+}
+
+.bg-nav .nav_right .nav_right_card {
+  width: 35px;
+  line-height: 40px;
+  position: relative;
+}
+
+.bg-nav .nav_right .nav_right_card .cartTotalQuantity {
+  position: absolute;
+  top: 20px;
+  right: -2px;
+  color: black;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 10px;
+  border-radius: 50%;
+}
+
+/* Section_1 Banner */
+#section_1 {
+  width: 100%;
+  height: calc(100vh - 56px);
+  margin-top: 56px;
+}
+
+@media (max-width: 768px) {
+  #section_1 {
+    height: 50vh;
+  }
+}
+
+#section_1 .swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#section_1 .swiper-slide {
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section_1 .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#section_1 .section_1_swiper {
+  margin-top: 56px;
+  width: 100%;
+  height: calc(100vh - 56px);
+}
+
+/* Section_2 Menu*/
+#section_2 {
+  width: 100%;
+  min-height: calc(100vh - 56px);
+  /*     background-color: $section_2_bg_color; */
+  position: relative;
+  background-image: url("../img/buger-pattern.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.404);
+  background-blend-mode: overlay;
+  overflow: hidden !important;
+  position: relative;
+}
+
+#section_2 .go_to_top {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #F87148;
+  z-index: 999px;
+}
+
+#section_2 .go_to_top.visible {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+@media (max-width: 576px) {
+  #section_2 .container_cus {
+    max-width: 100%;
+  }
+}
+
+#section_2 .section_2_title {
+  position: relative;
+}
+
+#section_2 .section_2_title .section_2_burger {
+  position: absolute;
+  right: 200px;
+  top: 80px;
+}
+
+@media (max-width: 769px) {
+  #section_2 .section_2_title .section_2_burger {
+    right: 50px;
+    top: 89px;
+  }
+}
+
+@media (max-width: 478px) {
+  #section_2 .section_2_title .section_2_burger {
+    display: none;
+  }
+}
+
+#section_2 .section_2_title .section_2_burger img:nth-child(1) {
+  width: 60px;
+  margin-right: 20px;
+}
+
+@media (max-width: 769px) {
+  #section_2 .section_2_title .section_2_burger img:nth-child(1) {
+    width: 40px;
+  }
+}
+
+#section_2 .section_2_title .section_2_burger img:nth-child(2) {
+  width: 38px;
+  margin: 0 10px;
+}
+
+@media (max-width: 769px) {
+  #section_2 .section_2_title .section_2_burger img:nth-child(2) {
+    width: 25px;
+  }
+}
+
+#section_2 .section_2_title .section_2_burger img:nth-child(3) {
+  width: 38px;
+}
+
+@media (max-width: 769px) {
+  #section_2 .section_2_title .section_2_burger img:nth-child(3) {
+    width: 25px;
+  }
+}
+
+#section_2 .section_2_title h2 {
+  margin: 48px 0px 0px 0px;
+}
+
+#section_2 .section_2_menu a {
+  font-size: 18px;
+  color: #0f4c81;
+}
+
+#section_2 .section_2_menu a.active {
+  color: #F87148;
+}
+
+@media (max-width: 996px) {
+  #section_2 .section_2_menu a {
+    font-size: 15px;
+  }
+}
+
+#section_2 .section_2_menu .tab-content .card {
+  margin-top: 10px;
+  padding: 0 5px;
+}
+
+#section_2 .section_2_menu .tab-content .card .card_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 7px;
+}
+
+#section_2 .section_2_menu .tab-content .card .card_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 996px) {
+  #section_2 .section_2_menu .tab-content .card .card_btn {
+    padding: 1px 5px;
+  }
+}
+
+#section_2 .section_2_menu .tab-content .card .card_btn button {
+  color: #F87148;
+  border-color: #F87148;
+}
+
+#section_2 .section_2_menu .tab-content .card .card_btn button:hover {
+  background-color: #F87148;
+  color: white;
+}
+
+#section_2 .section_2_menu .tab-content .card .card_btn button span {
+  font-size: 15px;
+  padding: 5px 15px;
+}
+
+@media (max-width: 996px) {
+  #section_2 .section_2_menu .tab-content .card .card_btn button span {
+    font-size: 9px;
+    padding: 5px 5px;
+  }
+}
+
+#section_2 .section_2_bot .section_2_bot_btns {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#section_2 .section_2_bot .section_2_bot_btns .menu_btn {
+  background-color: #7c7ad1;
+  border-color: #7c7ad1;
+}
+
+#section_2 .section_2_bot .section_2_bot_btns .check_btn {
+  background-color: #F87148;
+  border-color: #F87148;
+}
+
+/* Section_3 Social media*/
+#section_3 {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(170deg, #FFE862, #832083);
+  background: -o-linear-gradient(165deg, #FFE862, #832083);
+}
+
+@media (max-width: 576px) {
+  #section_3 .container_cus {
+    max-width: 100%;
+  }
+}
+
+#section_3 .container_cus .section_3_top {
+  position: relative;
+}
+
+#section_3 .container_cus .section_3_top .section_3_float {
+  position: absolute;
+  right: 470px;
+  top: -30px;
+  z-index: 999;
+}
+
+#section_3 .container_cus .section_3_top .section_3_float img {
+  width: 60px;
+}
+
+#section_3 .container_cus .section_3_top h2 {
+  padding-top: 46px;
+  color: #0f4c81;
+}
+
+#section_3 .container_cus .section_3_swiper_container {
+  max-width: 100%;
+}
+
+#section_3 .container_cus .section_3_swiper_container .swiper-slide {
+  max-width: 100%;
+}
+
+/* Section_4 banner & locations */
+@media (max-width: 576px) {
+  #section_4 .container_cus {
+    max-width: 100%;
+  }
+}
+
+#section_4 .btn-secondary {
+  background-color: #F87148;
+  border-color: #F87148;
+}
+
+#section_4 .btn-link {
+  color: #F87148;
+}
+
+#section_4 .section_4_banner {
+  width: 100%;
+  height: 50%;
+  background-color: #eeeeee;
+  background-image: url("");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: overlay;
+}
+
+#section_4 .section_4_locations {
+  /*         max-height: 80%; */
+  /*         padding-top: 50px; */
+  background-image: url("../img/locations/taiwan-map-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.35);
+  background-blend-mode: overlay;
+}
+
+#section_4 .section_4_locations .section_4_top {
+  position: relative;
+}
+
+#section_4 .section_4_locations .section_4_top h2 {
+  padding: 48px 0px 16px 0px;
+  margin: 0;
+  color: #2A3491;
+}
+
+#section_4 .section_4_locations .section_4_top .section_4_float {
+  position: absolute;
+  right: -7px;
+  top: 10px;
+  z-index: 999;
+}
+
+#section_4 .section_4_locations .section_4_top .section_4_float img {
+  width: 60px;
+  opacity: 0.3;
+}
+
+#section_4 .section_4_locations .section_4_locations_content {
+  height: 100%;
+}
+
+#section_4 .section_4_locations .section_4_locations_content .location_city {
+  max-width: 200px;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+
+#section_4 .section_4_locations .section_4_locations_content .location_city h4 {
+  color: #8B1D21;
+  text-shadow: #bdbbbb 2px 2px 1px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  #section_4 .modal .modal-dialog .modal-body .card {
+    max-width: 100%;
+  }
+}
+
+#section_4 .modal .modal-dialog .modal-body .card .card-body .location_icon a img {
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px 0 0;
+}
+
+/* Section_5 Features */
+#section_5 {
+  max-width: 100%;
+  padding-bottom: 46px;
+  background-color: #f7f7e8;
+  overflow: hidden !important;
+}
+
+@media (max-width: 576px) {
+  #section_5 .container_cus {
+    max-width: 100%;
+  }
+}
+
+#section_5 h2 {
+  padding-top: 46px;
+  margin-bottom: 32px;
+  color: #fa7268;
+}
+
+@media (max-width: 768px) {
+  #section_5 h2 {
+    padding-top: 32px;
+  }
+}
+
+#section_5 .section_5_content_top {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  #section_5 .section_5_content_top {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  #section_5 .section_5_content_top {
+    padding: 0 !important;
+  }
+}
+
+#section_5 .section_5_content_top .section_5_features {
+  background-color: #FFB133;
+  height: 200px;
+}
+
+#section_5 .section_5_content_top .section_5_features:nth-child(1) {
+  background-image: url("../img/cards/中西合併.jpg");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#section_5 .section_5_content_top .section_5_features:nth-child(1):hover::after {
+  display: inherit;
+}
+
+#section_5 .section_5_content_top .section_5_features:nth-child(1)::after {
+  display: none;
+  content: '中西合併';
+  color: white;
+  text-shadow: #474747 2px 2px 1px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.35);
+  background-blend-mode: overlay;
+  font-size: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section_5 .section_5_content_top .section_5_features:nth-child(2) {
+  background-image: url("../img/cards/Food-Safety-Blog.jpg");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#section_5 .section_5_content_top .section_5_features:nth-child(2):hover::after {
+  display: inherit;
+}
+
+#section_5 .section_5_content_top .section_5_features:nth-child(2)::after {
+  display: none;
+  content: '在地素材';
+  color: white;
+  text-shadow: #474747 2px 2px 1px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.35);
+  background-blend-mode: overlay;
+  font-size: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section_5 .section_5_content_bot {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  #section_5 .section_5_content_bot {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #section_5 .section_5_content_bot {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  #section_5 .section_5_content_bot {
+    padding: 0 !important;
+  }
+}
+
+#section_5 .section_5_content_bot .section_5_features {
+  background-color: #FFB133;
+  height: 200px;
+  overflow-x: hidden !important;
+}
+
+#section_5 .section_5_content_bot .section_5_features:nth-child(1) {
+  background-image: url("../img/cards/check.jpg");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#section_5 .section_5_content_bot .section_5_features:nth-child(1):hover::after {
+  display: inherit;
+}
+
+#section_5 .section_5_content_bot .section_5_features:nth-child(1)::after {
+  display: none;
+  content: '品質控管';
+  color: white;
+  text-shadow: #474747 2px 2px 1px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.35);
+  background-blend-mode: overlay;
+  font-size: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section_5 .section_5_content_bot .section_5_features:nth-child(2) {
+  background-image: url("../img/cards/Food-Safety-Blog.jpg");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#section_5 .section_5_content_bot .section_5_features:nth-child(2):hover::after {
+  display: inherit;
+}
+
+#section_5 .section_5_content_bot .section_5_features:nth-child(2)::after {
+  display: none;
+  content: '超值選擇';
+  color: white;
+  text-shadow: #474747 2px 2px 1px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.35);
+  background-blend-mode: overlay;
+  font-size: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section_5 .section_5_features:nth-child(2) {
+  margin-top: 100px;
+}
+
+@media (max-width: 1200px) {
+  #section_5 .section_5_features:nth-child(2) {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  #section_5 .section_5_features:nth-child(2) {
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+}
+
+/* Section_6 Contact and others */
+#section_6 {
+  width: 100%;
+  padding-top: 46px;
+  padding-bottom: 46px;
+  background-image: url("../img/yellow-bgi.png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.35);
+  background-blend-mode: overlay;
+}
+
+#section_6 .btn-link {
+  color: #F87148;
+}
+
+#section_6 .btn-secondary {
+  background-color: #F87148;
+  border-color: #F87148;
+}
+
+@media (max-width: 768px) {
+  #section_6 .container_cus {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#section_6 .container_cus .section_6_conten {
+  padding: 0 60px;
+}
+
+@media (max-width: 768px) {
+  #section_6 .container_cus .section_6_conten {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 15px;
+  }
+}
+
+#section_6 .container_cus .section_6_conten .nav-link {
+  color: #F87148;
+}
+
+#section_6 .container_cus .section_6_conten .nav-link.active {
+  color: white;
+  background-color: #F87148;
+}
+
+#section_6 .container_cus .section_6_conten .modal-content .modal-body .list-group .list-group-item.active {
+  color: white;
+  background-color: #F87148;
+}
+
+#section_6 .container_cus .section_6_conten a {
+  text-align: center;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  #section_6 .container_cus .section_6_conten a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 440px) {
+  #section_6 .container_cus .section_6_conten a {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 320px) {
+  #section_6 .container_cus .section_6_conten a {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  #section_6 .container_cus .section_6_conten .contact_content {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 440px) {
+  #section_6 .container_cus .section_6_conten .contact_content {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 768px) {
+  #section_6 .container_cus .section_6_conten .contact_content button,
+  #section_6 .container_cus .section_6_conten .contact_content input {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 440px) {
+  #section_6 .container_cus .section_6_conten .contact_content button,
+  #section_6 .container_cus .section_6_conten .contact_content input {
+    font-size: 9px;
+  }
+}
+
+#section_6 .container_cus .section_6_conten .contact_content .sub_btn {
+  background-color: #F87148;
+  border-color: #F87148;
+}
+
+#section_6 .container_cus .section_6_conten #recruit_modal .modal-body .recruit_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#section_6 .container_cus .section_6_conten #recruit_modal .modal-body .recruit_content .recruit_content_img {
+  width: 50%;
+}
+
+#section_6 .container_cus .section_6_conten #recruit_modal .modal-body .recruit_content .recruit_content_job {
+  width: 50%;
+  padding: 80px 30px;
+}
+
+#section_6 .container_cus .section_6_conten #recruit_modal .modal-body .recruit_content .recruit_content_job .recruit_content_job_conditions {
+  padding: 0 15px;
+}
+
+#section_6 .container_cus .section_6_conten #recruit_modal .modal-body .recruit_content .recruit_content_job .recruit_content_job_conditions span {
+  line-height: 26px;
+}
+
+#section_6 .section_6_content {
+  width: 100%;
+}
+
+#section_6 .section_6_content .contact_content {
+  min-height: 400px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  #section_6 .section_6_content .contact_content .label,
+  #section_6 .section_6_content .contact_content input {
+    font-size: 12px;
+  }
+}
+
+#section_6 .section_6_content .contact_content .swiper-container {
+  width: 100%;
+}
+
+#section_6 .modal_link {
+  color: #F87148;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#section_6 .modal_link:hover {
+  color: #F87148;
+}
+
+#section_6 .modal_link.active {
+  color: #fff;
+  background-color: #F87148;
+}
+
+/* Footer */
+footer {
+  font-size: 15px;
+  color: black;
+  /* .footer_top {
+        width: 100%;
+        background-color: $background_color_footer_top;
+
+        .footer_links {
+
+            ul {
+
+                list-style: none;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $font_color_footer;
+
+                        &:hover {
+                            color: yellow;
+
+                        }
+                    }
+
+                }
+            }
+
+        }
+    } */
+}
+
+footer .footer_bot {
+  width: 100%;
+  background-color: #FFB133;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  footer .footer_bot {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  footer .footer_bot {
+    font-size: 8px;
+  }
+}
+
+footer .footer_bot a {
+  color: green;
+}
+/*# sourceMappingURL=index.css.map */
