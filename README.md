@@ -1,4 +1,4 @@
-#<p align="center"> ddBuger 丹丹漢堡購物車網站</p>
+#ddBuger 丹丹漢堡購物車網站
 
 ## About ddBuger
 
